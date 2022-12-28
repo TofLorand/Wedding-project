@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+
+/*  = = = BASIS TYLES = = =  */
+
+header {
+    background: url(assets/wedding-landing-cover.jpg)no-repeat 70% center/cover;
+    font-family: 'Libre Baskerville', serif;
+}
+
+main {
+    background: url(assets/wedding-landing-background\ \(1\).png)repeat center;
+    color: #444349;
+    font-family: 'Muli', sans-serif;
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+.locations,
+.program,
+.gifts,
+.qea,
+.contact {
+    text-align: center;
+    width: 94%;
+    margin: 0rem auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+    margin: 1rem 0 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eda087;
+    transition: .2s ease-in-out;
+}
+
+/* = = = HEADER STYLES = = = */
+
+.cover {
+    display: table;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: hsla(0, 0%, 100%, .9);
+}
+
+.text h1 {
+    color: #d2ba87;
+    font-size: 3rem;
+    margin: 1.4rem;
+}
+
+.text-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text {
+    margin: 0 auto;
+    padding: .6rem;
+    color: hsla(0, 0%, 100%, .9);
+    background-color: hsla(100, 0%, 0%, .6);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    margin: 1rem;
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.5rem;
+    margin: 0.5rem auto;
+}
+
+.date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+@media (min-width:780px) {
+
+    header {
+        background: url('assets/wedding-landing-cover.jpg') no-repeat center/cover;
+    }
+
+    .text {
+        width: 50%;
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
+
+    .text h1 {
+        font-size: 6.5rem;
+        line-height: 10rem;
+    }
+
+    .tagline {
+        text-transform: uppercase;
+        line-height: 2rem;
+    }
+}
+
+/* = = = LOCATIONS SECTION STYLES = = =*/
+
+.loc-parts h1 {
+    margin-bottom: 2rem;
+}
+
+.loc-parts h3 {
+    font-weight: 800;
+}
+
+.loc-parts img {
+    height: 7.4rem;
+}
+
+.loc-parts::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+}
+
+.loc-parts div {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .loc-position {
+        display: flex;
+        justify-content: center;
+    }
+
+    .loc-parts {
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+
+    .loc-parts::after {
+        display: none;
+    }
+}
+
+/* = = = PROGRAM SECTION STYLES = = = */
+
+.program {
+    color: #d2ba87;
+    background: hsla(100, 0%, 0%, .6);
+    width: 100%;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+}
+
+.program p {
+    font-style: italic;
+}
+
+.program h2 {
+    margin: 1.5rem 0 2rem;
+}
+
+.program-container {
+    text-align: left;
+    line-height: 1.7rem;
+    letter-spacing: .05rem;
+}
+
+@media (min-width: 780px) {
+    .program-container {
+        text-align: left;
+        width: 30%;
+    }
+
+    .program {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* = = =  GIFT SECTION STYLES = = = */
+
+.gifts p {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    letter-spacing: .03rem;
+}
+
+.gifts img {
+    height: 7.4rem;
+}
+
+/* = = = QUESTIONS AND ANSWERS SECTION STYLES = = = */
+
+.qea {
+    background: hsla(100, 0%, 0%, .6);
+    color: #d2ba87;
+    width: 100%;
+    font-size: 1.13rem;
+}
+
+.qea h2 {
+    line-height: 4rem;
+}
+
+.qea p {
+    text-align: left;
+}
+
+.qea-parts {
+    line-height: 2rem;
+    letter-spacing: .05rem;
+}
+
+.qea-parts::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 50vw;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+}
+
+.questions {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.answer {
+    margin-bottom: 1.8rem;
+}
+
+@media (min-width: 780px) {
+    .qea {
+        width: 100%;
+    }
+
+    .qea-parts {
+        width: 30%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        margin: .5rem;
+        padding: 1.5rem;
+    }
+
+    .qea-parts::after {
+        display: none;
+    }
+}
+
+/* = = = CONTACT SECTION STYLES = = = */
+
+.contact p {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+.contact {
+    margin-bottom: 0;
+    padding: 2rem;
+}
+
+/* = = = FOOTER STYLES = = = */
+
+footer {
+    background-color: hsla(100, 0%, 0%, .6);
+    text-align: center;
+    width: 100%;
+    height: 4.4rem;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer small {
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 768px) {
+    footer {
+        min-height: 5rem;
+    }
+}
